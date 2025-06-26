@@ -13,6 +13,11 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -62,6 +67,28 @@
       href="css/style.css"
     />
   </head>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Typing Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var typed = new Typed("#typed-text", {
+        strings: [
+          "Aspiring Software Developer",
+          "Final Year B.Tech Student at Seneca Polytechnic",
+          "Senior Technologist at Seneca by weekday, Pizza Chef by weekend – living the Full-stack life 🍕👨‍💻",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 3000,
+        startDelay: 500,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|",
+      });
+    });
+  </script>
+
   <body
     data-spy="scroll"
     data-target=".site-navbar-target"
@@ -75,7 +102,7 @@
         <a
           class="navbar-brand"
           href="index.html"
-          >H Singh</a
+          ><span style="color: #ffc107"> H </span>Singh</a
         >
         <button
           class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
@@ -149,45 +176,57 @@
     </nav>
     <section
       id="home-section"
-      class="hero"
+      class="hero js-fullheight"
     >
-      <div class="home-slider owl-carousel">
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-              data-scrollax-parent="true"
-            >
-              <div
-                class="one-third js-fullheight order-md-last img"
-                style="background-image: url(images/bg_1.png); background-size: 510px 900px"
+      <div class="container">
+        <div class="row d-md-flex no-gutters align-items-center">
+          <!-- TEXT SECTION -->
+          <div class="col-md-6 d-flex align-items-center ftco-animate">
+            <div class="text">
+              <span
+                class="subheading"
+                style="color: #ffc107"
+                font-family:
+                sans-serif;
+                font-weight:
+                600;
+                font-size:
+                24px
+                >HELLO WORLD!</span
               >
-                <div class="overlay"></div>
-              </div>
-              <div
-                class="one-forth d-flex align-items-center ftco-animate"
-                data-scrollax=" properties: { translateY: '70%' }"
-              >
-                <div class="text">
-                  <span class="subheading">Hello World!</span>
-                  <h1 class="mb-4 mt-3">I'm <span>Harkirat Singh</span></h1>
-                  <h2 class="mb-4">A dedicated 3rd Year Software Development Student</h2>
-                  <p>
-                    <a
-                      href="#contact-section"
-                      class="btn btn-primary py-3 px-4"
-                      >Hire me</a
-                    >
-                    <a
-                      href="#projects-section"
-                      class="btn btn-white btn-outline-white py-3 px-4"
-                      >My works</a
-                    >
-                  </p>
-                </div>
-              </div>
+              <h1 class="mb-4 mt-3">
+                <p style="font-weight: 750; font-size: 64px">
+                  I'm <span style="color: #ffc107">Harkirat Singh</span>
+                </p>
+              </h1>
+              <h2 class="mb-4">
+                <span id="typed-text"></span>
+              </h2>
+              <p>
+                <a
+                  href="#contact-section"
+                  class="btn btn-primary py-3 px-4"
+                  >HIRE ME</a
+                >
+                <a
+                  href="#projects-section"
+                  class="btn btn-white btn-outline-white py-3 px-4"
+                  >MY WORKS</a
+                >
+              </p>
             </div>
+          </div>
+
+          <!-- IMAGE SECTION -->
+          <div
+            class="col-md-6 js-fullheight img"
+            style="
+              background-image: url('images/about.png');
+              background-size: 490px 810px;
+              background-position: center;
+            "
+          >
+            <div class="overlay"></div>
           </div>
         </div>
       </div>
@@ -1916,6 +1955,7 @@
         }
       }
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
