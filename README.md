@@ -2,4 +2,4 @@
 
 Welcome to my personal portfolio!
 
-You can view the live portfolio at: [portfolio-gamma-two-62.vercel.app/](portfolio-gamma-two-62.vercel.app/)
+You can view the live portfolio at: https://portfolio-gamma-two-62.vercel.app/
